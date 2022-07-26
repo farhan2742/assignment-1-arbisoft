@@ -1,0 +1,31 @@
+.bold {
+    font-weight: bold;
+}
+
+.user--cards {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.user--cards__info {
+    align-items: flex-start;
+    text-align: left;
+}
+
+.user--cards__info h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.progress {
+    width: 100px;
+    height: 100px;
+    
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    margin: auto;
+}
