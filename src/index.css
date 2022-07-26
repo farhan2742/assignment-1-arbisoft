@@ -29,3 +29,9 @@
     
     margin: auto;
 }
+
+@media only screen and (max-width: 600px) {
+    .user--cards {
+        flex-direction: column;
+    }
+}
