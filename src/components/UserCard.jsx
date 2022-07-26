@@ -14,7 +14,7 @@ const UserCard = (props) => {
             const users = props.Users.map(user => (
                 <Card key={user.id}  className="user--cards">
                     <CardContent className='user--cards__avatar'>
-                        <Avatar alt={user.username} src={`https://avatars.dicebear.com/v2/avataaars/${user.username}.svg?options[mood][]=happy`}  sx={{ width: 200, height: 200 }} />
+                        <Avatar alt={user.username} src={`https://avatars.dicebear.com/v2/avataaars/${user.username}.svg?options[mood][]=happy`}  sx={{ width: 200, height: 200 }} variant="square" />
                     </CardContent>
                     <CardContent className='user--cards__info'>
                         <Typography variant="h2" gutterBottom component="h2">
