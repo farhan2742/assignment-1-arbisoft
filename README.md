@@ -64,7 +64,7 @@ npm run tests
 
 ## Deployed on
 
-* [Netlify] (https://comfy-pudding-07a733.netlify.app/)
+* [Netlify](https://comfy-pudding-07a733.netlify.app/)
 
 ## Authors
 
