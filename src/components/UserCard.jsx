@@ -8,9 +8,9 @@ import Avatar from '@mui/material/Avatar';
 const UserCard = (props) => {
     
     const [cards, setCards] = React.useState([])
-
-    if (props.Users !== undefined && cards.length === 0) {
-        setCards(prev => {
+    
+    React.useEffect(() => {
+        setCards(() => {
             const users = props.Users.map(user => (
                 <Card key={user.id}  className="user--cards">
                     <CardContent className='user--cards__avatar'>
@@ -38,11 +38,11 @@ const UserCard = (props) => {
                     </CardContent>
                 </Card>
             ));
-            return [...prev,...users]
+            return [...users]
         });
-    }
-    console.log(cards)
-    
+      }, []);
+
+
     return (
         <Box>{cards}</Box>
     )
