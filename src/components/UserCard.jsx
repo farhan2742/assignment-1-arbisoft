@@ -1,14 +1,14 @@
-import * as React from "react";
+import React, { useState, useEffect } from "react";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Avatar from "@mui/material/Avatar";
 
-const UserCard = ({ users }) => {
-    const [cards, setCards] = React.useState([]);
+const UserCard = ({ users = {} }) => {
+    const [cards, setCards] = useState([]);
 
-    React.useEffect(() => {
+    useEffect(() => {
         setCards(() => {
             const userCards = users.map((user) => (
                 <Card key={user.id} className="user--cards">

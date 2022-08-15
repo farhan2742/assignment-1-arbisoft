@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import CssBaseline from "@mui/material/CssBaseline";
 import Container from "@mui/material/Container";
@@ -9,10 +9,10 @@ import Progress from "./components/Progress";
 import axios from "axios";
 
 function App() {
-    const [userData, setUserData] = React.useState({});
-    const [loading, setLoading] = React.useState(true);
+    const [userData, setUserData] = useState({});
+    const [loading, setLoading] = useState(true);
 
-    React.useEffect(() => {
+    useEffect(() => {
         axios
             .get("https://jsonplaceholder.typicode.com/users")
             .then(function (response) {
